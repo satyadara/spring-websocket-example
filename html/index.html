@@ -47,7 +47,7 @@
       var p = document.createElement('p');
       p.style.wordWrap = 'break-word';
       p.appendChild(document.createTextNode(messageOutput.from + ": "
-          + messageOutput.text + " (" + messageOutput.time + ")"));
+          + messageOutput.text));
       response.appendChild(p);
     }
   </script>
@@ -55,7 +55,7 @@
 <body onload="disconnect()">
 <div>
   <div>
-    <input type="text" id="from" placeholder="Choose a nickname"/>
+    <input type="text" id="from" placeholder="Topic name"/>
   </div>
   <br/>
   <div>
